@@ -22,9 +22,13 @@ port=1883
 client1= paho.Client("MMMa")
 client1.on_message = on_message
 
+st.title("Luces")
+st.subheader("CONTROL POR BOTÓN")
 
+image = Image.open('Luces casco.png')
 
-st.title("Controlador de luces")
+st.image(image, width=400)
+
 
 if st.button('ON'):
     act1="ON"
