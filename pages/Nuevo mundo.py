@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Miguel Alonso Aragón")
 image = Image.open('imagen voz.png')
 
-st.image(image, width=1000)
+st.image(image, width=700)
 
 
 try:
