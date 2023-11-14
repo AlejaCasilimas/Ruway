@@ -24,8 +24,11 @@ st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '
          'Ponte los audifonos y acompañanos en esta increible historia. ')
            
 
-text = st.text_input("Ingrese el texto.")
-
+#text = st.text_input("Ingrese el texto.")
+text = 'Aqui encontrarás la narración de la contrucción del nuevo mundo '  
+         'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. ' 
+         'Recuerda que al final encontrarás la transcripción del audio '  
+         'Ponte los audifonos y acompañanos en esta increible historia. '
 tld="es"
 
 def text_to_speech(text, tld):
