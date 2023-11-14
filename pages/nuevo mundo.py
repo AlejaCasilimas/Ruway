@@ -19,7 +19,7 @@ except:
 
 st.subheader("Llegada a un nuevo mundo.")
 st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '  
-         'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura ' 
+         'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. ' 
          'Recuerda que al final encontrarás la transcripción del audio '  
          'Ponte los audifonos y acompañanos en esta increible historia. ')
            
