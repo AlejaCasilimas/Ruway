@@ -19,8 +19,7 @@ os.environ['OPENAI_API_KEY'] = ke
 
 
     # upload file
-pdf = st.file_uploader(Ruway.pdf)
-
+pdf = pdf.open("Ruway.pdf")
    # extract the text
 if pdf is not None:
       from langchain.text_splitter import CharacterTextSplitter
