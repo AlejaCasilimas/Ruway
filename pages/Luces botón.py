@@ -31,7 +31,7 @@ image = Image.open('Casco render.png')
 st.image(image, width=400)
 
 
-if st.button('ON'):
+if st.button('Encender'):
     act1="ON"
     client1= paho.Client("MMMa")                           
     client1.on_publish = on_publish                          
@@ -45,7 +45,7 @@ if st.button('ON'):
 else:
     st.write('')
 
-if st.button('OFF'):
+if st.button('Apagar'):
     act1="OFF"
     client1= paho.Client("MMMa")                           
     client1.on_publish = on_publish                          
