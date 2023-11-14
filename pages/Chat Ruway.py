@@ -17,9 +17,10 @@ ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
 
-
     # upload file
-pdf = pdf.open("Ruway.pdf")
+pdf = st.file_uploader("Carga el archivo PDF", type="pdf")
+
+
    # extract the text
 if pdf is not None:
       from langchain.text_splitter import CharacterTextSplitter
