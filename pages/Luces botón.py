@@ -24,7 +24,7 @@ client1.on_message = on_message
 
 
 
-st.title("MQTT Control")
+st.title("Controlador de luces")
 
 if st.button('ON'):
     act1="ON"
