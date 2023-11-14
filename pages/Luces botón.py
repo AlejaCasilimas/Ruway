@@ -2,7 +2,6 @@ import paho.mqtt.client as paho
 import time
 import streamlit as st
 import json
-values = 0.0
 act1="OFF"
 
 def on_publish(client,userdata,result):             #create function for callback
@@ -53,16 +52,4 @@ if st.button('OFF'):
 else:
     st.write('')
 
-values = st.slider('Selecciona el rango de valores',0.0, 100.0)
-st.write('Values:', values)
 
-if st.button('Enviar valor analógico'):
-    client1= paho.Client("MMMa")                           
-    client1.on_publish = on_publish                          
-    client1.connect(broker,port)   
-    message =json.dumps({"Analog": float(values)})
-    ret= client1.publish("MMMmqtt_a", message)
-    
- 
-else:
-    st.write('')
