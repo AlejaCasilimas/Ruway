@@ -12,7 +12,7 @@ from langchain.callbacks import get_openai_callback
 #import pickle5 as pickle
 #from pathlib import Path
 
-st.title('Chatea con tu PDF 💬')
+st.title('Aprende sobre Ruway 💬')
 ke = st.text_input('Ingresa tu Clave')
 #os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 os.environ['OPENAI_API_KEY'] = ke
@@ -38,7 +38,7 @@ if pdf is not None:
       knowledge_base = FAISS.from_texts(chunks, embeddings)
 
 # show user input
-      st.subheader("Escribe que quieres saber sobre el documento")
+      st.subheader("Escribe que quieres saber sobre Ruway")
       user_question = st.text_input(" ")
       if user_question:
         docs = knowledge_base.similarity_search(user_question)
