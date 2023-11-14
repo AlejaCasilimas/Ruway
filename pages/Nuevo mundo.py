@@ -18,6 +18,7 @@ except:
     pass
 
 st.subheader("Llegada a un nuevo mundo.")
+st.subheader("Lee su historia")
 st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '  
          'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. ' 
          'Recuerda que al final encontrarás la transcripción del audio '  
@@ -48,7 +49,7 @@ def text_to_speech(text, tld):
 result, output_text = text_to_speech(text, tld)
 audio_file = open(f"temp/{result}.mp3", "rb")
 audio_bytes = audio_file.read()
-st.markdown(f"## Tú audio:")
+st.markdown(f"## Escucha la historia:")
 st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
    # if display_output_text:
