@@ -18,7 +18,7 @@ def on_message(client, userdata, message):
         
 
 
-broker="157.230.214.127"
+broker="broker.mqttdashboard.com"
 port=1883
 client1= paho.Client("MMMa")
 client1.on_message = on_message
@@ -37,7 +37,7 @@ if st.button('Encender'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("MMMmqtt_s", message)
+    ret= client1.publish("cosplay/casco", message)
  
     #client1.subscribe("Sensores")
     
@@ -51,7 +51,7 @@ if st.button('Apagar'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("MMMmqtt_s", message)
+    ret= client1.publish("cosplay/casco", message)
   
     
 else:
