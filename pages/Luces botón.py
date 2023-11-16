@@ -37,7 +37,7 @@ if st.button('Encender'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("cosplay/casco", message)
+    ret= client1.publish("cosplay/Casco", message)
  
     #client1.subscribe("Sensores")
     
@@ -51,7 +51,7 @@ if st.button('Apagar'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("cosplay/casco", message)
+    ret= client1.publish("cosplay/Casco", message)
   
     
 else:
