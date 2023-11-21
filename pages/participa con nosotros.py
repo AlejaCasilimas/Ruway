@@ -8,3 +8,10 @@ st.write("Solo tienes que ingresar en el siguiente código Qr o en el link que a
 image = Image.open("Código QR para Concurso.png")
 
 st.image(image, caption="https://forms.office.com/r/tJ57RUQPAL")
+
+# Texto con hipervínculo
+link_text = "[Enlace a Google](https://forms.office.com/r/tJ57RUQPAL)"
+
+# Mostrar el hipervínculo utilizando st.markdown
+st.markdown(link_text, unsafe_allow_html=True)
+
