@@ -26,10 +26,16 @@ st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '
            
 
 #text = st.text_input("Ingrese el texto.")
-text = ('Aqui encontrarás la narración de la contrucción del nuevo mundo '  
-         'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. ' 
-         'Recuerda que al final encontrarás la transcripción del audio '  
-         'Ponte los audifonos y acompañanos en esta increible historia. ')
+text = ('En el siglo XV, un navegante italiano, '
+        'financiado por la Corona de Castilla para encontrar una ruta a las Indias Orientales, '
+        'accidentalmente llega a América, desconocida para los europeos. '
+        'Después de conflictos y saqueos, Miguel Alonso Aragón, único superviviente de la expedición, '
+        'es confundido por los holkanes como un ave y llevado a Uxmal. '
+        'Tras aprender el idioma, Aragón convence al descendiente de Dios en Tikal de financiar una expedición a Europa. '
+        'Sin embargo, al regresar con riquezas, Aragón es ejecutado por traición, desencadenando la furia maya. '
+        'Durante 100 años, el Imperio Maya ataca Europa, propagando una peste que debilita al continente. '
+        'Finalmente, con Europa derrotada, el continente americano, liderado por el Imperio Maya,'
+        'florece tecnológicamente con Nukal como centro. ')
 tld="es"
 
 def text_to_speech(text, tld):
