@@ -10,7 +10,7 @@ st.image(image, caption="Ruway")
 
 st.write("Para saber más acerca del proyeto, ingresa en el siguiente link")
 
-link_text = "[Más información](https://sites.google.com/view/proyectoqijtikal/inicioL)"
+link_text = "[Más información](https://sites.google.com/view/proyectoqijtikal/inicio)"
 
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)
