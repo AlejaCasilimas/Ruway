@@ -18,7 +18,7 @@ except:
     pass
 
 st.subheader("Llegada a un nuevo mundo.")
-st.subheader("Lee su historia")
+st.subheader("Escucha su historia")
 st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '  
          'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. '   
          'Ponte los audifonos y acompañanos en esta increible historia. ')
