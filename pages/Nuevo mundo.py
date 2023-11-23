@@ -18,11 +18,23 @@ except:
     pass
 
 st.subheader("Llegada a un nuevo mundo.")
-st.subheader("Conoce su historia")
+
 st.write('Aqui encontrarás la narración de la contrucción del nuevo mundo '  
          'La historia de Miguel Alonso Aragón y su expedición y adentramiento en esta cultura. '   
          'Ponte los audifonos y acompañanos en esta increible historia. ')
            
+st.subheader("Su Historia.")
+st.write('En el siglo XV, un navegante italiano, '
+        'financiado por la Corona de Castilla para encontrar una ruta a las Indias Orientales, '
+        'accidentalmente llega a América, desconocida para los europeos. '
+        'Después de conflictos y saqueos, Miguel Alonso Aragón, único superviviente de la expedición, '
+        'es confundido por los holkanes como un ave y llevado a Uxmal. '
+        'Tras aprender el idioma, Aragón convence al descendiente de Dios en Tikal de financiar una expedición a Europa. '
+        'Sin embargo, al regresar con riquezas, Aragón es ejecutado por traición, desencadenando la furia maya. '
+        'Durante 100 años, el Imperio Maya ataca Europa, propagando una peste que debilita al continente. '
+        'Finalmente, con Europa derrotada, el continente americano, liderado por el Imperio Maya,'
+        'florece tecnológicamente con Nukal como centro. ')
+
 
 #text = st.text_input("Ingrese el texto.")
 text = ('En el siglo XV, un navegante italiano, '
@@ -57,6 +69,8 @@ audio_bytes = audio_file.read()
 st.markdown(f"## Escucha su historia:")
 st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
+image = Image.open("logo.png")
+st.image(image)
    # if display_output_text:
    # st.markdown(f"## Texto en audio:")
    # st.write(f" {output_text}")
